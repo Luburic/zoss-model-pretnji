@@ -10,7 +10,7 @@ U ovoj sekciji su definisani bitni termini koji se koriste u modelima pretnji.
 
 **Napadač**: Pojedinac ili organizacija koja želi da naruši bezbednosna svojstva resursa analiziranog modula.
 
-**Pretnja visokog nivoa**: Cilj ili korak ka cilju napadača, definisan kao narušavanje bezbednosnog svojstva konkretnog resursa. Na primer, *spoofing servisa za vremensku prognozu* ili *tampering kriptografskog ključa*.
+**Pretnja visokog nivoa**: Cilj ili korak ka cilju napadača, koji ističe motivaciju napadača i narušavanje bezbednosnog svojstva konkretnog resursa. Na primer, *predstavljanje kao servis za vremensku prognozu (spoofing) radi proširenja površnine za napad analiziranog modula* ili *izmena kriptografskog ključa (tampering) radi krađe šifrovanih podataka*.
 
 **Pretnja niskog nivoa**: Pretnja visokog nivoa konkretizovana na podsistem analiziranog modula. Na primer, *tampering kriptografskih ključeva u keystoru A*.
 
