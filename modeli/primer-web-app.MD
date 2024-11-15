@@ -4,15 +4,17 @@ Dokument definiše rezultat bezbednosne analize dizajna veb aplikacije za podrš
 
 Softver se sastoji od klijentske aplikacije, izgrađene u React tehnologiji, serverske aplikacije izgrađene u ASP.NET radnom okviru i PostgreSQL baze podataka.
 
-## Terminologija korišćena u dokumentu
+## Terminologija dokumenta
 
 U ovoj sekciji su definisani bitni termini koji se koriste u ostatku teksta.
 
 ### Terminologija pretnji
 
-- **Analiziran modul**: Sistem fizičkih i digitalnih **resursa** koji zajedno čine veću celinu i koji su meta bezbednosne analize. Informacioni sistem se sastoji od više aplikacija, hardverskih uređaja i korisnika. Aplikacija se sastoji od više komponenti i obrađuje različite podatke. Komponenta se sastoji od više klasa i interaguje sa određenim bibliotekama.
-- **Resurs**: Fizički ili digitalan objekat čija **bezbednosna svojstva** **napadač** želi da naruši.
-- **Bezbednosno svojstvo**: Apstraktan termin koji uključuje **poverljivost**, **integritet** i **dostupnost**, odnosno svojstva resursa koja želimo da zaštitimo u kontekstu informacione bezbednosti.
+**Analiziran modul**: Sistem fizičkih i digitalnih **resursa** koji zajedno čine veću celinu i koji su meta bezbednosne analize. Informacioni sistem se sastoji od više aplikacija, hardverskih uređaja i korisnika. Aplikacija se sastoji od više komponenti i obrađuje različite podatke. Komponenta se sastoji od više klasa i interaguje sa određenim bibliotekama.
+
+**Resurs**: Fizički ili digitalan objekat čija **bezbednosna svojstva** **napadač** želi da naruši.
+
+**Bezbednosno svojstvo**: Apstraktan termin koji uključuje **poverljivost**, **integritet** i **dostupnost**, odnosno svojstva resursa koja želimo da zaštitimo u kontekstu informacione bezbednosti.
 
 **Napadač**: Pojedinac ili organizacija koja želi da naruši bezbednosna svojstva resursa analiziranog modula.
 
@@ -40,4 +42,5 @@ U ovoj sekciji su definisani bitni termini koji se koriste u ostatku teksta.
 
 **Kompozitni proces**: Proces koji predstavlja podsistem analiziranog modula, koji je detaljnije opisan na drugom dijagramu toka podataka. Kompozitni proces mora imati bar jednu granicu poverenja unutar sebe.
 
-## Kontekstni dijagram toka podataka
+## Tokovi podataka analiziranog modula
+Dijagram ispod prikazuje glavne procesne komponente, skladišta, tokove podataka i eksterne entitete sa kojim analiziran modul interaguje.
