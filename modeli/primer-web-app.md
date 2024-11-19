@@ -32,7 +32,7 @@ Prethodni dijagram anotiramo identifikovanim resursima, radi identifikacije pret
 
 ![image](https://github.com/user-attachments/assets/afc090c8-3af1-47e0-8136-c3bb3dcaae98)
 
-## Analiza prentje R21. Rušenje ASP.NET aplikacije (DoS)
+## R21. Rušenje (DoS) ASP.NET aplikacije - analiza pretnje
 
 Slika ispod sumira (podskup) pretnji niskog nivoa, napada i bezbednosnih kontrola koje se izvlače iz analizirane pretnje.
 
@@ -40,7 +40,7 @@ Slika ispod sumira (podskup) pretnji niskog nivoa, napada i bezbednosnih kontrol
 
 U nastavku diskutujemo napad A2133, gde objašnjavamo kontekst u kom se napad izvršava, sam vektor napada (kako izgleda napad) i kako uz pomoć njega napadač realizuje pretnju. Zatim analiziramo bezbednosne kontrole za sprečavanje napada.
 
-### Analiza napada A2133. Upload and execute scripts
+### A2133. Upload and execute scripts - analiza napada
 
 Funkcionalost za upload datoteka smešta datoteke u nekakav direktorijum. Datoteke u okviru direktorijuma trebaju da budu dostupne putem veb čitača, kako bi pacijent mogao da proveri da li je okačio dobre fotografije i kako bi zubar video date dokumente.
 Ako napadač može da okači malicioznu skriptu, koju zatim može da aktivira preko interneta, može da izvrši proizvoljan kod.
@@ -58,7 +58,7 @@ Da bi ovakav napad bio moguć, neophodno je sledeće:
 - Da napadač ima pristup datoteci nakon što je postavljena na server.
 - Da datoteka može da se izvrši (direktorijum ima `execute` pravo).
 
-### Definisanje bezbednosnih kontrola za pretnju P213. Image upload DoS
+### Bezbednosne kontrole za pretnju P213. Image upload DoS
 U nastavku je kod koji grupiše bezbednosne kontrole m2131, m2132, m2133a-c. Zbog integrisanosti koda su sve bezbednosne kontrole prikazane u celosti, a u opštem slučaju bismo vezali mitigacije za konkretan napad kada su one izolovane.
 
 Komentari naglašavaju linije koda i funkcije koje predstavljaju konkretnu bezbednosnu kontrolu.
