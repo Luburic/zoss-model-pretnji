@@ -123,7 +123,6 @@ public class FileUploadController : ControllerBase
     {
         var fileExtension = Path.GetExtension(fileName)?.ToLower();
 
-        // Check magic numbers for JPEG and PNG
         if (fileExtension == ".jpg" || fileExtension == ".jpeg")
         {
             // JPEG magic numbers: FF D8 FF
